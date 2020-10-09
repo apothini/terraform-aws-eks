@@ -236,13 +236,13 @@ variable "worker_create_cluster_primary_security_group_rules" {
 variable "permissions_boundary" {
   description = "If provided, all IAM roles will be created with this permissions boundary attached."
   type        = string
-  default     = null
+  default     = ""
 }
 
 variable "iam_path" {
   description = "If provided, all IAM roles will be created on this path."
   type        = string
-  default     = "/"
+  default     = "/delegatedadmin/developer/"
 }
 
 variable "cluster_create_endpoint_private_access_sg_rule" {
